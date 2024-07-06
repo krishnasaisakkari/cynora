@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap-grid.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <style>
+        
+        *{
+                box-sizing: border-box;
+                background-color: ;
+            }
+
+            body{ 
+                margin: 0;
+                height: auto;
+                width: 100%;
+                background: rgb(2, 50, 2);
+                overflow-x: hidden;
+            }
+            header{
+                height: 90px;
+                width: 100%;
+                background-color: green;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 9999;
+            }
+            .icons{
+              width: 10%;
+              height:;
+              display: flex;
+              color: aliceblue;
+              justify-content: space-evenly;
+              align-items: center;
+              transform: translateX(100px);
+              font-size: 20px;
+              border: 1px solid white;
+              border-radius: 5px;
+            }
+            .demo{
+              height: 100%;
+              width: 40%;
+              background-color: green;
+              display:inline-flex;
+              align-items: center;
+              gap: 10px;
+            }
+            .headc{
+              height: 35px; 
+              width: 35px; 
+              background-color: rgb(94, 185, 94); 
+              border-radius: 5px;
+              display: flex; 
+              align-items: center; 
+              justify-content: center
+            }
+            .land{
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 100%;
+              height: 700px;
+              transform: translateY(0px);
+              background-image: url(crop.jpg);
+            }
+            /* header h1{
+              margin-left: 100px;
+            } */
+            ul {
+              list-style-type: none;
+              display: inline-flex;
+            }
+            ul li{
+              margin: 10px;
+              padding-left: 10px;
+              padding-right: 10px;
+              font-weight: 500;
+              opacity: 0.7;
+              color: white;
+              transition: .3s ease;
+              cursor: pointer;
+              border-radius: 25px;
+            }
+            ul li a{
+              text-decoration: none;
+              color: white;
+            }
+            ul li:hover{
+              opacity: 1;
+              background-color: #043e01;
+            }
+            .land h6{
+              padding-top: 250px;
+              margin-left: 50px;
+              color: orange;
+              font-size: clamp(25px,1vw,15px);
+            }
+            .land h1{
+              margin-left: 50px;
+              color: white;
+              font-size: clamp(70px,3vw,25px);
+            }
+            .land h5{
+              color: white;
+              margin-left: 50px;
+              opacity: 70%;
+              font-size:clamp(25px,1vw,15px);
+            }
+            .demo2{
+              display: flex;
+              flex-wrap: wrap;
+            }
+            .item{
+              flex-grow: 1;
+              height: 600px;
+              width: 50%;
+              background: rgb(2, 50, 2);
+             
+            }
+            .card:hover{
+              scale: 1.1;
+            }
+          
+            .mask{
+              background-image: url(istockphoto-489078546-612x612.jpg);
+              clip-path: circle(30%);
+              background-repeat: no-repeat;
+              background-size: cover;
+              height: 400px;
+              display: flex;
+              justify-content: center;
+              align-self: center;
+              transition: .5s ease;
+            }
+            .mask:hover{
+              clip-path:circle(100%)
+            }
+            .item h6{
+              padding-top: 100px;
+              
+              color: orange;
+              font-size: clamp(25px,1vw,15px);
+            }
+            .item h1{
+              
+              color: white;
+              font-size: clamp(70px,3vw,25px);
+            }
+            .item h5{
+              color: white;
+              opacity: 70%;
+              font-size:clamp(20px,1vw,15px);
+            }
+            .card{
+              height: 200px;
+              width: 20%;
+              flex-grow: 1;
+              background-color: #043e01;
+              transition: .3s ease;
+            } 
+
+            .card1{
+            height: 300px;
+            width: 20%;
+            flex-grow: 1;
+            border-radius: 0 25px 0 25px;
+            background-color: #043e01;
+            box-shadow: 2px 2px 5px rgb(216, 216, 57);
+            transition: .3s ease;
+            }
+            .card1:hover{
+              scale: 1.1;
+            }
+            p{
+               color: white;
+            }
+            .card3{
+              height: 600px;
+              width: 50%;
+            }
+            </style>
+            <body>
+                
+<!-- Footer -->
+ <header style="position: fixed;">
+<div class="icons">
+  <i class="bi bi-facebook"></i>
+  <i class="bi bi-instagram"></i>
+  <i class="bi bi-twitter-x"></i>
+</div>
+<div class="demo">
+  <div class="headc">
+    <i class="bi bi-envelope-fill" style="color: white; font-size: 20px;"></i>
+  </div>
+  <div style="display: inline-table; color: rgb(83,189,77);">
+    <h6 style="line-height: 80%;">Send us mail<br><span style="font-size: 20px;color: white;">cynoracropscience@gmail.com</span></h6>
+  
+  </div>
+  <div style="border-left: 2px solid rgb(83, 189, 77);">&nbsp</div>
+  <div class="headc">
+    <i class="bi bi-telephone-fill" style="color: white; font-size: 20px;"></i>
+  </div>
+  <div style="display: inline-table; color: rgb(83,189,77);">
+    <h6 style="line-height: 100%;">Contact us<br><span style="font-size: 20px; color: white;">+91 8549008209</span></h6>
+  
+  </div>
+</div>
+ </header>
+ <header style="background-color: transparent; backdrop-filter:blur(100px); position: fixed;top: 90px; justify-content: space-around;">
+  <h1 style="color: white;">cynora</h1>
+  <ul>
+   <li><a href="#"> Home</a></li>
+   <li><a href="#"> About us</a></li>
+   <li><a href="#"> Product</a></li>
+   <li><a href="#"> Contact</a></li>
+    
+  </ul>
+  <button class="btn btn-warning" style="color: white;">Get in touch</button>
+ </header>
+ <div class="land">
+    <h6>your source for top-quality organic seeds</h6>
+    <h1>Bioavailable Organic <br> Farming Innovations</h1>
+    <h5>The key to Eco-Friendly Sustainable Agriculture</h5>
+    <button class="btn btn-warning" style="margin-left: 50px;color: white;">Discover more</button>
+ </div>
+ <div class="demo2">
+  <div class="item mask">
+
+  </div>
+  <div class="item">
+    <h6>About our company</h6>
+    <h1>Providing the <br> Organic sevice</h1>
+    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, odit cupiditate quos pariatur, rerum repellat nobis quibusdam reiciendis odio eius esse praesentium magni sint itaque ipsam fuga numquam atque adipisci?</h5>
+   <div style="display: flex; gap: 10px; margin-top: 20px;">
+    <div style="height: 50px; width: 50px; border-radius: 50px; background-color: yellow;">
+    <div style="height: 50px; width: 50px; border-radius: 50px; background-color: green; transform: translateY(-5px);"><i style="font-size: 30px; display: flex; justify-content: center; color: white;" class="bi bi-award-fill"></i></div>
+   </div>
+   <h5>100% guaranteed organic</h5>
+   </div>
+   <div style="display: flex; gap: 10px; margin-top: 20px;">
+    <div style="height: 50px; width: 50px; border-radius: 50px; background-color: yellow;">
+    <div style="height: 50px; width: 50px; border-radius: 50px; background-color: green; transform: translateY(-5px);"><i style="font-size: 30px; display: flex; justify-content: center; color: white;" class="bi bi-award-fill"></i></div>
+   </div>
+   <h5>100% Top quality seeds</h5>
+   </div>
+  </div>
+ </div>
+
+
+ <div style="display:flex; color:orange; justify-content: center; align-self: center; margin-top: 100px;">
+   <h5>Why choose our products</h5>
+ </div>
+ <div style="display:flex; color:rgb(255, 255, 255); justify-content: center; align-self: center;">
+   <h5 style="font-size: 30px;">We offer agriculture eco products</h5>
+ </div>
+
+
+ <div class="container" style="margin-top: 50px;">
+  <div class="demo2" style="gap: 10px;">
+    <div class="card">
+      <div style="display: flex;margin-top: 20px; justify-content: center; transform: translateY(25px);">
+        <div style="height: 100px; width: 100px; border-radius: 50px; background-color: yellow;">
+        <div style="height: 100px; width: 100px; border-radius: 50px; background-color: green; transform: translateY(-5px);"><img src="fertilizer-removebg-preview.png" alt="" height="150px" style="transform: translateX(-20px)translateY(-30px);"></div>
+       <h4 style="padding-left: 10px; color: white;">cyomin</h4>
+      </div>
+       </div>
+    
+    </div>
+    <div class="card">
+      <div style="display: flex;margin-top: 20px; justify-content: center; transform: translateY(25px);">
+        <div style="height: 100px; width: 100px; border-radius: 50px; background-color: yellow;">
+        <div style="height: 100px; width: 100px; border-radius: 50px; background-color: green; transform: translateY(-5px);"><img src="fertilizer-removebg-preview.png" alt="" height="150px" style="transform: translateX(-20px)translateY(-30px);"></div>
+       <h4 style="padding-left: 10px; color: white;">cyomin</h4>
+      </div>
+       </div>
+    
+    </div>
+    <div class="card">
+      <div style="display: flex;margin-top: 20px; justify-content: center; transform: translateY(25px);">
+        <div style="height: 100px; width: 100px; border-radius: 50px; background-color: yellow;">
+        <div style="height: 100px; width: 100px; border-radius: 50px; background-color: green; transform: translateY(-5px);"><img src="fertilizer-removebg-preview.png" alt="" height="150px" style="transform: translateX(-20px)translateY(-30px);"></div>
+       <h4 style="padding-left: 10px; color: white;">cyomin</h4>
+      </div>
+       </div>
+    
+    </div>
+     </div>
+     <center><button class="btn btn-warning mt-5">View more</button></center>
+ </div>
+
+ <div style="display:flex; color:orange; justify-content: center; align-self: center; margin-top: 100px;">
+   <h5>Clients testmonial</h5>
+ </div>
+ <div style="display:flex; color:rgb(255, 255, 255); justify-content: center; align-self: center;">
+   <h5 style="font-size: 40px;">What clients are saying <br> About our product</h5>
+ </div>
+ <div class="container">
+  <div class="demo2" style="gap: 20px;">
+    <div class="card1"><div style="display: flex;margin-top: 20px; justify-content: center; transform: translateY(25px);">
+      <div style="height: 100px; width: 100px; border-radius: 50px; background-color: yellow;">
+      <div style="height: 100px; width: 100px; border-radius: 50px; background-color: green; transform: translateY(-5px);"><img src="test-removebg-preview.png" alt="" height="100px" style="transform: translateX(-25px)translateY(-15px);"></div>
+     <h4 style="padding-left: 10px; color: white;">sreekar</h4>
+     <div>
+      <p>nice products really loved all the prods</p>
+     </div>
+    </div>
+     </div></div>
+    
+     <div class="card1"><div style="display: flex;margin-top: 20px; justify-content: center; transform: translateY(25px);">
+      <div style="height: 100px; width: 100px; border-radius: 50px; background-color: yellow;">
+      <div style="height: 100px; width: 100px; border-radius: 50px; background-color: green; transform: translateY(-5px);"><img src="test-removebg-preview.png" alt="" height="100px" style="transform: translateX(-25px)translateY(-15px);"></div>
+     <h4 style="padding-left: 10px; color: white;">sreekar</h4>
+     <div>
+      <p>nice products really loved all the prods</p>
+     </div>
+    </div>
+     </div></div>
+     <div class="card1"><div style="display: flex;margin-top: 20px; justify-content: center; transform: translateY(25px);">
+      <div style="height: 100px; width: 100px; border-radius: 50px; background-color: yellow;">
+      <div style="height: 100px; width: 100px; border-radius: 50px; background-color: green; transform: translateY(-5px);"><img src="test-removebg-preview.png" alt="" height="100px" style="transform: translateX(-25px)translateY(-15px);"></div>
+     <h4 style="padding-left: 10px; color: white;">sreekar</h4>
+     <div>
+      <p>nice products really loved all the prods</p>
+     </div>
+    </div>
+     </div></div>
+     <div class="card1"><div style="display: flex;margin-top: 20px; justify-content: center; transform: translateY(25px);">
+      <div style="height: 100px; width: 100px; border-radius: 50px; background-color: yellow;">
+      <div style="height: 100px; width: 100px; border-radius: 50px; background-color: green; transform: translateY(-5px);"><img src="test-removebg-preview.png" alt="" height="100px" style="transform: translateX(-25px)translateY(-15px);"></div>
+     <h4 style="padding-left: 10px; color: white;">sreekar</h4>
+     <div>
+      <p>nice products really loved all the prods</p>
+     </div>
+    </div>
+     </div></div>
+
+   </div>
+ </div>
+ 
+ <div style="height: 600px; width: 100%; background:url(istockphoto-489078546-612x612.jpg); background-repeat: no-repeat;background-size: cover; margin-top: 30px;backdrop-filter: blur(20px);">
+<div style="height: 600px; width: 100%; backdrop-filter: blur(3px);" class="demo2" >
+<div class="card3">
+  <div class="container">
+    <div class="container my-5">
+      <h2 style="color:white;">Send Us Your Feedback</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Enter your feedback" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="card3">
+  <h1 style="color: orange; margin-top: 50px;">Get in touch</h1>
+  <h1 style="color: white;">Reach us send a message</h1>
+  <h5 style="color: rgb(1, 1, 1);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus repudiandae asperiores eligendi excepturi qui odio perspiciatis voluptatem quia alias et soluta minus pariatur recusandae, quas repellat, reprehenderit architecto deleniti aliquid?</h5>
+  <div class="headc" style="display: flex;">
+    <i class="bi bi-envelope-fill" style="color: white; font-size: 20px;"></i>
+  </div>
+  <div style="display: inline-table; color: rgb(83,189,77);">
+    <h6 style="line-height: 80%;">Send us mail<br><span style="font-size: 20px;color: white;">cynoracropscience@gmail.com</span></h6>
+ 
+
+</div>
+</div>
+ </div>
+<footer
+    class="text-center text-lg-start text-white mt-5"
+    style="background-color: #0a6c03">
+<!-- Grid container -->
+<div class="container p-4 pb-0" id="contact">
+<!-- Section: Links -->
+<section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">
+        Cynora
+      </h6>
+      <p>
+        The only place where you can find the quality
+      </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">Products</h6>
+      <p class="ftr">
+        <a href="#" class="text-white ftr" style="text-decoration: none;">Cyomin</a>
+      </p>
+      <p class="ftr">
+        <a href="#" class="text-white frt" style="text-decoration: none;">Cyomin</a>
+      </p>
+      <p class="ftr">
+        <a href="#" class="text-white ftr" style="text-decoration: none;">Cyomin</a>
+      </p>
+      <p class="ftr">
+        <a href="#" class="text-white ftr" style="text-decoration: none;">Cyomin</a>
+      </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">
+        Membership
+      </h6>
+      <p class="ftr">
+        <a href="#" class="text-white" style="text-decoration: none;">Create an Account</a>
+      </p>
+      <p class="ftr">
+        <a href="#" class="text-white" style="text-decoration: none;">log in</a>
+      </p>
+      <p class="ftr">
+        <a href="#" class="text-white" style="text-decoration: none;">refer</a>
+      </p>
+      <p class="ftr">
+        <a href="#" class="text-white" style="text-decoration: none;">Help</a>
+      </p>
+    </div>
+
+    <!-- Grid column -->
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">Contact</h6>
+      <p class="ftr"><i class="fas fa-home mr-3"></i>vizag,seethammadhara,tpt colony</p>
+      <p class="ftr"><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+      <p class="ftr"><i class="fas fa-phone mr-3"></i> + 01 234 567 77</p>
+      <p class="ftr"><i class="fas fa-print mr-3"></i> + 01 234 567 77</p>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+
+<hr class="my-3">
+
+<!-- Section: Copyright -->
+<section class="p-3 pt-0">
+  <div class="row d-flex align-items-center">
+    <!-- Grid column -->
+    <div class="col-md-7 col-lg-8 text-center text-md-start">
+      <!-- Copyright -->
+      <div class="p-3">
+        © 2024 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/"
+           >google.com</a
+          >
+      </div>
+      <!-- Copyright -->
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+      <!-- Facebook -->
+      <a
+         class="btn btn-outline-light btn-floating m-1"
+         class="text-white"
+         role="button"
+         ><i class="fab fa-facebook-f"></i
+        ></a>
+
+      <!-- Twitter -->
+      <a
+         class="btn btn-outline-light btn-floating m-1"
+         class="text-white"
+         role="button"
+         ><i class="fab fa-twitter"></i
+        ></a>
+
+      <!-- Google -->
+      <a
+         class="btn btn-outline-light btn-floating m-1"
+         class="text-white"
+         role="button"
+         ><i class="fab fa-google"></i
+        ></a>
+
+      <!-- Instagram -->
+      <a
+         class="btn btn-outline-light btn-floating m-1"
+         class="text-white"
+         role="button"
+         ><i class="fab fa-instagram"></i
+        ></a>
+    </div>
+    <!-- Grid column -->
+  </div>
+</section>
+<!-- Section: Copyright -->
+</div>
+<!-- Grid container -->
+</footer>
+
+</body>
+</html>
