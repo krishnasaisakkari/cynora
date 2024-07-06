@@ -228,7 +228,7 @@
   </ul>
   <button class="btn btn-warning" style="color: white;">Get in touch</button>
  </header>
- <div class="land">
+ <div class="land" id="land">
     <h6>your source for top-quality organic seeds</h6>
     <h1>Bioavailable Organic <br> Farming Innovations</h1>
     <h5>The key to Eco-Friendly Sustainable Agriculture</h5>
@@ -238,7 +238,7 @@
   <div class="item mask">
 
   </div>
-  <div class="item">
+  <div class="item" id="item">
     <h6>About our company</h6>
     <h1>Providing the <br> Organic sevice</h1>
     <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, odit cupiditate quos pariatur, rerum repellat nobis quibusdam reiciendis odio eius esse praesentium magni sint itaque ipsam fuga numquam atque adipisci?</h5>
@@ -258,15 +258,15 @@
  </div>
 
 
- <div style="display:flex; color:orange; justify-content: center; align-self: center; margin-top: 100px;">
+ <div style="display:flex; color:orange; justify-content: center; align-self: center; margin-top: 100px;" id="11">
    <h5>Why choose our products</h5>
  </div>
- <div style="display:flex; color:rgb(255, 255, 255); justify-content: center; align-self: center;">
+ <div style="display:flex; color:rgb(255, 255, 255); justify-content: center; align-self: center;" id="111">
    <h5 style="font-size: 30px;">We offer agriculture eco products</h5>
  </div>
 
 
- <div class="container" style="margin-top: 50px;">
+ <div class="container" style="margin-top: 50px;" id="card">
   <div class="demo2" style="gap: 10px;">
     <div class="card">
       <div style="display: flex;margin-top: 20px; justify-content: center; transform: translateY(25px);">
@@ -305,7 +305,7 @@
  <div style="display:flex; color:rgb(255, 255, 255); justify-content: center; align-self: center;">
    <h5 style="font-size: 40px;">What clients are saying <br> About our product</h5>
  </div>
- <div class="container">
+ <div class="container" id="card2">
   <div class="demo2" style="gap: 20px;">
     <div class="card1"><div style="display: flex;margin-top: 20px; justify-content: center; transform: translateY(25px);">
       <div style="height: 100px; width: 100px; border-radius: 50px; background-color: yellow;">
@@ -524,5 +524,138 @@
 <!-- Grid container -->
 </footer>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+      // gsap.from(".box1 h1",{
+      //   opacity:0,
+      //   y:20,
+
+      // })
+      // gsap.to(".box1 h1",{
+      //   opacity:1,
+      //   y:0,
+      //   delay:0.2,
+      //   duration:1,
+      //   stagger:{
+      //     from:"center",
+      //     each:0.1,
+      //   },
+      // })
+      gsap.from("#land",{
+        opacity:0,
+        y:100,
+        duration:2,
+        delay:0.3,
+        scrollTrigger:{
+          trigger:"#land",
+          start:"top 90%",
+          end:"center 20%",
+          // markers:true,
+          toggleActions:"play pause resume reset",
+        }
+      })
+      gsap.to("#land",{
+        opacity:1,
+        y:0,
+        duration:2,
+        delay:0.3,
+        scrollTrigger:{
+          trigger:"#land",
+          start:"top 90%",
+          end:"center 20%",
+          // markers:true,
+          toggleActions:"play pause resume reset",
+        }
+      }),
+
+      gsap.from("#item",{
+        opacity:0,
+        y:100,
+        duration:2,
+        delay:0.3,
+        scrollTrigger:{
+          trigger:"#item",
+          start:"top 90%",
+          end:"center 20%",
+          // markers:true,
+          toggleActions:"play pause resume reset",
+        }
+      })
+      gsap.to("#item",{
+        opacity:1,
+        y:0,
+        duration:2,
+        delay:0.3,
+        scrollTrigger:{
+          trigger:"#item",
+          start:"top 90%",
+          end:"center 20%",
+          // markers:true,
+          toggleActions:"play pause resume reset",
+        }
+      }),
+      gsap.from("#card",{
+        opacity:0,
+        y:100,
+        duration:2,
+        delay:0.3,
+        scrollTrigger:{
+          trigger:"#card",
+          start:"top 90%",
+          end:"center 20%",
+          // markers:true,
+          toggleActions:"play pause resume reset",
+        }
+      })
+      gsap.to("#card",{
+        opacity:1,
+        y:0,
+        duration:2,
+        delay:0.3,
+        scrollTrigger:{
+          trigger:"#card",
+          start:"top 90%",
+          end:"center 20%",
+          // markers:true,
+          toggleActions:"play pause resume reset",
+        }
+      }),gsap.from("#card2",{
+        opacity:0,
+        y:100,
+        duration:2,
+        delay:0.3,
+        scrollTrigger:{
+          trigger:"#card2",
+          start:"top 90%",
+          end:"center 20%",
+          // markers:true,
+          toggleActions:"play pause resume reset",
+        }
+      })
+      gsap.to("#card2",{
+        opacity:1,
+        y:0,
+        duration:2,
+        delay:0.3,
+        scrollTrigger:{
+          trigger:"#card2",
+          start:"top 90%",
+          end:"center 20%",
+          // markers:true,
+          toggleActions:"play pause resume reset",
+        }
+      })
+
+
+
+
+
+
+
+    </script>
 </body>
 </html>
